@@ -8,43 +8,72 @@
     font-family: "Roboto", sans-serif;
 }
 
-nav{
-    height:80px;
-    display:flex;
-}
-
-.nav__container{
-    width:100%;
-    max-width:1280px;
-    height:100%;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    margin: 0 auto;
-}
-
-ul{
-    display:flex;
+a{
+    text-decoration:none;
 }
 
 li{
     list-style:none;
 }
 
-.tlogo{
-    width: 40px;
+nav{
+    height:80px;
+    display:flex;
 }
 
-a{
-    text-decoration:none;
+
+ul{
+    display:flex;
+}
+
+img{
+    width:100%;
+    height:100%;
+    max-height: 50vh;
+}
+
+
+.nav__container{
+    width:100%;
+    max-width:1280px;
+    height:100%;
+    padding: 0 24px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    padding: 0 0 4px;
+}
+
+
+.tlogo{
+    display:flex;
+    align-items: center;
+    width: 40px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 24px;
+}
+
+.timg{
+    margin:0 12px 0 0;
 }
 
 .nav__link{
+    color:black;
     margin-left: 24px;
     text-decoration: none;
     font-size: 20px;
     font-weight:bold;
     padding: 8px;
+}
+
+.nav__link:hover{
+    color:#6415ff
+}
+
+.nav__link:hover{
+    text-decoration:underline;
 }
 
 .nav__link--primary{
@@ -54,6 +83,91 @@ a{
     border-radius: 24px;
 }
 
+.nav__link--primary:hover{
+    background-color:#5022ab;
+    border: 18px solid #5022ab;
+}
+
 .purple{
     color:#6415ff;
+}
+
+
+
+
+/*landing */
+
+header{
+    height: calc(100vh - 80px);
+}
+
+
+.header__container{
+    padding-top:96px;
+    width:100%;
+    max-width:1280px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-around;
+}
+
+.header__container--left{
+    max-width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.header__continer--right{
+    max-width:60%;
+}
+
+.header__description{
+    font-size:48px;
+}
+
+.header__subtitle{
+    margin: 38px 0;
+    font-size: 18px;
+}
+
+.header__bottom{
+    color:grey;
+    font-size:12px;
+}
+
+.email__input{
+    max-width:448px;
+    margin: 0 auto;
+    font-size: 4px;
+    border: 2px grey solid;
+    border-radius: 116px;
+}
+
+.btn{
+    font-size: 16px;
+    color:#fff;
+    background-color:#6415ff;
+    border-radius: 12px;
+    border:none;
+    padding: 6px 0;
+    margin: 16px 16px 16px 36px;
+    
+}
+
+.btn:hover{
+    background-color:#5022ab;
+    cursor:pointer;
+}
+
+.email{
+    margin: 16px;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+}
+
+.header__img{
+    opacity:0.4;
+    padding: 0 128px 0 0
 }
