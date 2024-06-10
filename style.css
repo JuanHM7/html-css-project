@@ -114,7 +114,7 @@ img{
 header{
     max-height: 800px ;
     height: calc(100vh - 80px);
-    padding: 96px;
+    padding: 96px 0;
 }
 
 
@@ -232,7 +232,7 @@ header{
 
 .services{
     display:flex;
-    padding: 96px 0 0 ;
+    padding: 40px 0 0 ;
 }
 
 .services{
@@ -455,6 +455,7 @@ header{
 
 /* PRICING*/
 
+
 .pricing__top{
     padding: 56px;
 }
@@ -463,10 +464,11 @@ header{
     display:flex;
     flex-wrap: wrap;
     padding: 8px;
-    margin: 64px;
+    margin: 64px 0;
 }
 
 .pricing__plan1{
+    padding: 0 32px;
     width: calc(100%/3);
 }
 
@@ -492,7 +494,6 @@ header{
     align-items: center;
     border-top:2px solid rgb(226, 232, 240);
     border-bottom: px solid rgb(226, 232, 240);
-    
 
 }
 
@@ -510,12 +511,9 @@ header{
 
 .pricing__plan--title2{
     padding: 32px;
-    border-radius: 0 0 0 0;
     display:flex;
     flex-direction: column;
     text-align: center;
-    border-left:2px solid rgb(226, 232, 240);
-    border-right:2px solid rgb(226, 232, 240);
     border-radius: 8px;
 }
 .pricing__plan--title3{
@@ -568,6 +566,8 @@ header{
 }
 
 .pricing__duration{
+    color: grey;
+    font-weight:700;
 
 }
 
@@ -582,6 +582,8 @@ header{
     border-top: 1px solid rgb(226, 232, 240);
     border-radius: 0 0 4px 4px;
 }
+
+
 
 .pricing__plans--button1{
     text-align: center;
@@ -602,6 +604,8 @@ header{
 
 .btn1:hover{
     color: rgb(228, 222, 222);
+    box-shadow: 10px 5px 5px grey ; 
+    transform: translateY(-1px);
     transition: all 300ms;
 }
 
@@ -616,6 +620,13 @@ header{
     
 }
 
+.btn2:hover{
+    color: rgb(228, 222, 222);
+    box-shadow: 10px 5px 5px #5210d6 ;
+    transform: translateY(-1px);
+    transition: all 300ms;
+}
+
 .btn3{
     font-size: 16px;
     color:#fff;
@@ -626,10 +637,20 @@ header{
     margin: 16px 16px 16px 36px;
 }
 
+.btn3:hover{
+    color: rgb(228, 222, 222);
+    box-shadow: 10px 5px 5px grey ; 
+    transform: translateY(-1px);
+    transition: all 300ms;
+}
+
 /* FOOTER */
 
+footer{
+    background-color:rgb(100 21 255)
+}
+
 .links{
-    background-color: rgb(100 21 255);
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -662,7 +683,7 @@ header{
 .footer{
     display:flex;
     justify-content: space-between;
-    padding-top: 128px;
+    padding-top: 96px;
     background-color:rgb(100 21 255);
 }
 
@@ -697,6 +718,34 @@ header{
 .footer__para{
     color:white;
     padding-top: 8px;
+}
+
+
+/* Animation */
+
+.nav__container, header, #quality, #values, footer{
+    animation: 1s slide-right;
+}
+
+#features,.steps,#pricing{
+    animation: 1s slide-left;
+}
+@keyframes slide-right{
+    from {
+        margin-left: -100%;
+      }
+      to {
+        margin-left: 0%;
+      }
+}
+
+@keyframes slide-left{
+    from {
+        margin-right: -100%;
+      }
+      to {
+        margin-right: 0%;
+      }
 }
 
 /* Small phones, tablets, large smartphones */
