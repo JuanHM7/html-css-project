@@ -866,6 +866,10 @@ footer{
         padding-bottom: 48px;
     }
 
+    .nav__links{
+        display:none;
+    }
+
 
 
 }
