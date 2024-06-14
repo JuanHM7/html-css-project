@@ -702,13 +702,30 @@ footer{
     
 }
 
-.footer__social{
-    height:16px;
-    width:16px;
+.footer__social1{
+    color:black;
+    margin: 0 24px 0 0;
+    background-color:white;
+    align-items: center;
+    text-align: center;
+    border: 5px solid white;
+    border-radius:  99px;
+    
+}
+.footer__social2{
+    color:black;
+    margin: 0 24px 0 0;
+    background-color:white;
+    border: 5px solid white;
+    border-radius: 99px;
+    
+}
+.footer__social3{
     color:black;
     margin: 0 24px 0 0;
     background-color:white;
     text-align: center;
+    border: 5px solid white;
     border-radius: 99px;
     
 }
