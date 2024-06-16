@@ -262,18 +262,16 @@ header{
 }
 
 .service__img{
-    
+    display:flex;
+    align-items: center;
     height:24px;
     width:24px;
-    text-align: center;
 }
 
 .service__img--wrapper{
-    margin-right: 8px;
     border:1px grey solid;
-    border-radius: 50% ;
-    width:60px;
-    height:45px;
+    border-radius: 50%;
+    padding:6px;
     display:flex;
     align-items:center;
     justify-content: center;
@@ -683,6 +681,7 @@ footer{
     justify-content: space-between;
     padding-top: 96px;
     background-color:rgb(100 21 255);
+    margin-bottom: 24px;
 }
 
 .footer__left{
@@ -690,6 +689,7 @@ footer{
 }
 
 .footer__right{
+    display:flex;
     justify-content: center;
     padding-top: 8px
 }
@@ -702,29 +702,46 @@ footer{
     
 }
 
+.tlogo2{
+    display:flex;
+    align-items: center;
+    width: 40px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
 .footer__social1{
+    display: flex;
     color:black;
+    padding: 4px 8px;
     margin: 0 24px 0 0;
     background-color:white;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     border: 5px solid white;
     border-radius:  99px;
     
 }
 .footer__social2{
+    display:flex;
+    padding: 4px 6px;
     color:black;
     margin: 0 24px 0 0;
     background-color:white;
+    align-items: center;
     border: 5px solid white;
     border-radius: 99px;
     
 }
 .footer__social3{
+    display:flex;
+    padding:6px 6px;
     color:black;
     margin: 0 24px 0 0;
     background-color:white;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     border: 5px solid white;
     border-radius: 99px;
     
